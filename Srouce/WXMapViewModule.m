@@ -11,6 +11,16 @@
 #import "WXConvert+AMapKit.h"
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <AMapLocationKit/AMapLocationKit.h>
+#import <WeexPluginLoader/WeexPluginLoader.h>
+
+WX_PlUGIN_EXPORT_MODULE(amap, WXMapViewModule)
+
+WX_PlUGIN_EXPORT_COMPONENT(weex-amap, WXMapViewComponent)
+WX_PlUGIN_EXPORT_COMPONENT(weex-amap-marker, WXMapViewMarkerComponent)
+WX_PlUGIN_EXPORT_COMPONENT(weex-amap-polyline, WXMapPolylineComponent)
+WX_PlUGIN_EXPORT_COMPONENT(weex-amap-polygon, WXMapPolygonComponent)
+WX_PlUGIN_EXPORT_COMPONENT(weex-amap-circle, WXMapCircleComponent)
+WX_PlUGIN_EXPORT_COMPONENT(weex-amap-info-window, WXMapInfoWindowComponent)
 
 @implementation WXMapViewModule
 
